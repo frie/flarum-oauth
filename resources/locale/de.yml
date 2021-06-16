@@ -1,13 +1,13 @@
 fof-oauth:
   admin:
     settings:
-      only_icons_label: Only show the Log In Button icons (alternative layout)
+      only_icons_label: Zeige nur die Login-Icons (alternatives Layout)
 
       providers:
-        callback_url_text: If necessary, set the callback URL to {url}.
+        callback_url_text: Belege die Callback-URL mit {url}, falls notwendig
 
         discord:
-          description: Create an app at {link}. Add the redirect URL in the OAuth2 tab.
+          description: Erzeuge eine App auf {link}. Die Redirect-URL in der Registerkarte OAuth2 eingeben.
 
           client_id_label: => fof-oauth.ref.settings.client_id
           client_secret_label: => fof-oauth.ref.settings.client_secret
@@ -19,48 +19,48 @@ fof-oauth:
           app_secret_label: => fof-oauth.ref.settings.app_secret
 
         github:
-          description: Create an OAuth app at {link}.
+          description: Erzeuge eine OAuth-App bei {link}.
 
           client_id_label: => fof-oauth.ref.settings.client_id
           client_secret_label: => fof-oauth.ref.settings.client_secret
 
         gitlab:
-          description: Create an application at {link}. Give the application the <code>read_user</code> scope.
+          description: Lege eine Applikation an bwi  {link}. Give the application the <code>read_user</code> scope.
 
           client_id_label: => fof-oauth.ref.settings.app_id
           client_secret_label: => fof-oauth.ref.settings.app_secret
           domain_label: GitLab Domain
 
         twitter:
-          description: Create an app at {link}. You will need to set a Terms of Service URL and a Privacy Policy URL. Make sure to then add the request email permission.
+          description: "Lege eine App an bei {link}. Dort müssen URL's für die AGB und Sicherheitsregeln angegeben werden. Achte aur die Eingabe der E-Mail-Berechtigung."
 
           api_key_label: API Key
           api_secret_label: API Secret
 
         google:
-          description: Create an application at {link}.
+          description: Lege eine Applikation an bwi  {link}.
 
           client_id_label: => fof-oauth.ref.settings.client_id
           client_secret_label: => fof-oauth.ref.settings.client_secret
-
+        
         linkedin:
-          description: Create an application at {link}.
+          description: Lege eine Applikation an bwi  {link}.
 
           client_id_label: => fof-oauth.ref.settings.client_id
           client_secret_label: => fof-oauth.ref.settings.client_secret
 
         nextcloud:
-          description: 'In Nextcloud: configure an OAuth 2.0 client under "Settings / Security"'
+          description: 'Bei Nextcloud: konfiguriere einen OAuth 2.0 Client unter "Einstellungen / Sicherheit"'
 
-          base_uri_label: Base URI
-          copy_user_label: 'Copy user name from Nextcloud (no user choice)'
+          base_uri_label: Basis-URI
+          copy_user_label: 'Username von Nextcloud übernehmen (keine Auswahl durch User)'
           client_id_label: => fof-oauth.ref.settings.client_id
           client_secret_label: => fof-oauth.ref.settings.client_secret
-          icon_name_label: Icon Name
+          icon_name_label: Name Icon
 
   forum:
     log_in:
-      with_button: Log In with {provider}
+      with_button: "{provider}-Login"
 
       # Modify these if your provider requires specific wording.
       # You may use {provider} in the translation.
@@ -86,8 +86,8 @@ fof-oauth:
       nextcloud: '=> fof-oauth.lib.providers.nextcloud'
 
     error:
-      bad_verification_code: Invalid or expired verification token. Please try again.
-      invalid_state: Invalid state. Please try again.
+      bad_verification_code: Ungültiger oder abgelaufener Verifikationstoken. Bitte noch einmal versuchen.
+      invalid_state: Ungültiger Zustand. Bitte noch einmal versuchen.
 
   lib:
     providers:

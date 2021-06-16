@@ -28,6 +28,7 @@ class OAuthServiceProvider extends ServiceProvider
             Providers\Twitter::class,
             Providers\Google::class,
             Providers\LinkedIn::class,
+            Providers\Nextcloud::class,
         ], 'fof-oauth.providers');
 
         // Add OAuth provider routes
