@@ -44,10 +44,6 @@ Therefore a switch was added *Copy user name from Nextcloud* (activate by enteri
 
 A german translation was added to the original.
 
-You can replace the text for the forum sign in buttons in two ways.
-- Use `fof-oauth.forum.providers.<name>` to replace the name of the provider on the forum side
-- Use `fof-oauth.forum.log_in.with_<name>_button` to replace the entire button "Log In with <name>" text
-
 ### Links
 
 - Original code: [GitHub](https://github.com/FriendsOfFlarum/oauth)
