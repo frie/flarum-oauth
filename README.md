@@ -1,5 +1,9 @@
 # OAuth by FriendsOfFlarum - added Nextcloud
 
+## Just a proof of concept - not intended for further use
+
+_Try https://github.com/frie/flarum-nextcloud-oauth instead_
+
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 
